@@ -20,6 +20,9 @@
 * [Vote on Cases](for-validators/voting.md)
 * [Slashing & Rewards](for-validators/slashing.md)
 
+## SDK
+* [SDK Overview](sdk/overview.md)
+
 ## CLI
 * [CLI Overview](cli/overview.md)
 
