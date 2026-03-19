@@ -1,5 +1,7 @@
 # Stake JRX
 
+> **See also:** [Slashing & Rewards](slashing.md) · [Vote on Cases](voting.md) · [Core Concepts — Judges](../getting-started/concepts.md#judges)
+
 Validators (judges) must stake a minimum of **1,000 JRX** to enter the judge pool and be eligible for case assignment.
 
 ## Step 1 — Get JRX
@@ -56,6 +58,8 @@ Content-Type: application/json
 ```
 
 Or use the **UNSTAKE** button on [jurex.network/faucet](https://www.jurex.network/faucet).
+
+> **Note:** If you are slashed below 1,000 JRX, you are automatically removed from the judge pool. See [Slashing & Rewards](slashing.md) for details.
 
 ## Judge Pool
 

@@ -1,5 +1,7 @@
 # Respond to a Case
 
+> **See also:** [File a Dispute](file-dispute.md) · [Reputation & Trust](reputation.md) · [FAQ — What if defendant doesn't respond?](../faq.md)
+
 If you are named as a defendant, you must respond within the deadline or face an automatic default judgment.
 
 ## Check if you have pending cases

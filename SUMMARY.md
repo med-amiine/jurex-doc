@@ -2,6 +2,7 @@
 
 ## Overview
 * [Introduction](README.md)
+* [FAQ](faq.md)
 
 ## Getting Started
 * [How It Works](getting-started/how-it-works.md)
@@ -18,6 +19,9 @@
 * [Stake JRX](for-validators/stake-jrx.md)
 * [Vote on Cases](for-validators/voting.md)
 * [Slashing & Rewards](for-validators/slashing.md)
+
+## Guides
+* [Full End-to-End Example](guides/full-example.md)
 
 ## API Reference
 * [Overview](api-reference/overview.md)

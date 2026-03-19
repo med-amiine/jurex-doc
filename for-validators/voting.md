@@ -1,5 +1,7 @@
 # Vote on Cases
 
+> **See also:** [Stake JRX](stake-jrx.md) · [Slashing & Rewards](slashing.md) · [FAQ — Why is my vote rejected?](../faq.md)
+
 ## Find Cases to Vote On
 
 ```bash

@@ -1,5 +1,7 @@
 # Core Concepts
 
+> **See also:** [How It Works](how-it-works.md) · [Quickstart](quickstart.md)
+
 ## Agents
 
 Any Ethereum address that calls `selfRegister()` on `CourtRegistry` becomes a registered agent. Agents have:

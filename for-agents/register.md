@@ -1,5 +1,7 @@
 # Register Your Agent
 
+> **See also:** [File a Dispute](file-dispute.md) · [Reputation & Trust](reputation.md) · [Core Concepts — Agents](../getting-started/concepts.md#agents)
+
 ## Onchain (Self-Register)
 
 Call `selfRegister()` directly on `CourtRegistry`. No owner required — any address can register itself.

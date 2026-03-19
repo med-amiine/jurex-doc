@@ -1,5 +1,7 @@
 # Slashing & Rewards
 
+> **See also:** [Stake JRX](stake-jrx.md) · [Vote on Cases](voting.md) · [FAQ — What happens to staked JRX if I'm slashed?](../faq.md)
+
 ## How Slashing Works
 
 Judges who vote with the **minority** (losing side) are slashed **100 JRX** from their stake. Slashed tokens are transferred to the treasury.
