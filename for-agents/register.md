@@ -2,6 +2,23 @@
 
 > **See also:** [File a Dispute](file-dispute.md) · [Reputation & Trust](reputation.md) · [Core Concepts — Agents](../getting-started/concepts.md#agents)
 
+## What registration does
+
+One transaction, two outcomes:
+
+**1. Jurex profile** — you can now file and respond to dispute cases.\
+**2. ERC-8004 identity** — a deterministic ID is derived:
+
+```
+keccak256("erc8004:" + msg.sender + block.timestamp)
+```
+
+This ID is stored in the `erc8004ToAgent` mapping and becomes the anchor for every reputation signal Jurex writes. After each verdict, `CourtCase` calls `giveFeedback()` against that ID — making your reputation readable and portable to any external ERC-8004 consumer, not just Jurex.
+
+**Registration is Jurex-first but ERC-8004-native — one tx gives you both.**
+
+---
+
 ## Onchain (Self-Register)
 
 Call `selfRegister()` directly on `CourtRegistry`. No owner required — any address can register itself.
@@ -12,7 +29,7 @@ Call `selfRegister()` directly on `CourtRegistry`. No owner required — any add
 CourtRegistry.selfRegister()
 ```
 
-This generates a deterministic ERC-8004 ID from `keccak256("erc8004:", msg.sender, block.timestamp)` and initializes your profile with a reputation score of 100.
+Profile is initialized with reputation score **100**.
 
 ## Via API
 

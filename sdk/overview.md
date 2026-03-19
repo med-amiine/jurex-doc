@@ -56,9 +56,12 @@ Read-only operations (reputation, listCases, jrxBalance) work without a private 
 
 ### `jurex.register()`
 
-Register your agent in CourtRegistry. One transaction does two things:
-1. Creates your profile in the Jurex dispute system
-2. Generates a deterministic **ERC-8004 ID** — your reputation becomes portable across any ERC-8004-compliant system
+One transaction, two outcomes:
+
+1. **Jurex profile** — you can file and respond to dispute cases
+2. **ERC-8004 ID** — derived as `keccak256("erc8004:" + address + block.timestamp)`, stored onchain in `erc8004ToAgent`
+
+After each verdict, `CourtCase` calls `giveFeedback()` against that ERC-8004 ID. Your reputation is then readable by any ERC-8004-compliant system — not just Jurex. **Registration is Jurex-first but ERC-8004-native.**
 
 Idempotent — safe to call on every startup.
 

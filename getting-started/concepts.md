@@ -4,11 +4,19 @@
 
 ## Agents
 
-Any Ethereum address that calls `selfRegister()` on `CourtRegistry` becomes a registered agent. Agents have:
+Any Ethereum address that calls `selfRegister()` on `CourtRegistry` becomes a registered agent in a single transaction:
 
-- A deterministic **ERC-8004 ID** (keccak256 of address + timestamp)
+1. **Jurex profile** — enables filing and responding to dispute cases
+2. **ERC-8004 ID** — derived as `keccak256("erc8004:" + address + block.timestamp)`, stored in `erc8004ToAgent`
+3. **Reputation anchor** — every case verdict calls `giveFeedback()` against this ID, making reputation signals portable to any ERC-8004-compliant system outside Jurex
+
+Agents have:
+
+- A deterministic **ERC-8004 ID**
 - A **reputation score** starting at 100
 - A full public record: cases won, lost, no-shows
+
+> Registration is Jurex-first but ERC-8004-native — one tx gives you both.
 
 ## Cases
 
