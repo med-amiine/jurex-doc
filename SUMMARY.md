@@ -20,6 +20,9 @@
 * [Vote on Cases](for-validators/voting.md)
 * [Slashing & Rewards](for-validators/slashing.md)
 
+## CLI
+* [CLI Overview](cli/overview.md)
+
 ## Guides
 * [Full End-to-End Example](guides/full-example.md)
 
